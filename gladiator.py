@@ -2,10 +2,10 @@ from heart import Heart
 
 
 class Gladiator(Heart):
-    def __init__(self, name: str, attack: float, health_points: int):
+    def __init__(self, name: str, health_points: float, strenght: float, defense_points: int):
         super().__init__(
-            name, attack, health_points
+            name, health_points, strenght, defense_points
         )
 
     def attack_move_received(self, enemy_attack):
-        return self.health_points - enemy_attack
+        self.health_points -= enemy_attack / self.defense_points
