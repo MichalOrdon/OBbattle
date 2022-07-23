@@ -13,10 +13,10 @@ class Berserker(Heart):
     def defense_pose(self):
         self.defense_points += 4
 
-    def amok(self):
+    def amok(self):  # umiejętność klasowa
         self.health_points *= 0.5
         self.strenght *= 1.5
 
-    def special_attack(self):
+    def special_attack(self):  #klasowy atak specjalny
         deald_damage = self.strenght * 2
         return deald_damage
