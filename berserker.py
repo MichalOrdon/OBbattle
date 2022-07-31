@@ -2,7 +2,7 @@ from heart import Heart
 
 
 class Berserker(Heart):
-    def __init__(self, name: str, health_points: float, strenght: float, defense_points: int):
+    def __init__(self, name: str, health_points: float, strenght: float, defense_points: int = 1):
         super().__init__(
             name, health_points, strenght, defense_points
         )

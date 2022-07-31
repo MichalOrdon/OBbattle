@@ -6,6 +6,7 @@ class Heart:
         self.defense_points = defense_points
 
         assert strenght >= 0, f"Moc ataku nie może być ujemna. {strenght}"
+        assert defense_points == 1, f"Punkty obrony nie mogą być mniejsze niż 1"
 
     def __repr__(self):
         return f"Imię: {self.__name}, życie: {self.health_points}, siła: {self.strenght}, obrona: {self.defense_points}"
